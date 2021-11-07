@@ -1,9 +1,10 @@
 $color-primary: #0e1111;
-$color-primary-light: #353839;
+$color-primary-light: #232b2b;
 $color-secondary: #353839;
 $color-secondary-light: #3b444b;
 $color-accent: #414a4c;
 
+$color-black: black;
 $color-text: #333;
 $color-white: #fff;
 $color-white-transparent: rgba($color-white, .8);
@@ -20,9 +21,30 @@ $button-border-radius: .5rem;
     box-sizing: inherit;
 }
 
+::selection {
+    color: $color-black;
+    background-color: $color-white;
+}
+
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 62.5%; // 10px = 1rem; 10/16px = 62.5%;
+
+    @include responsive(tab-land) {
+        font-size: 56.25%; // 9px = 1rem; 9/16px = 56.25%;
+    }
+
+    @include responsive(tab-port) {
+        font-size: 50%; // 8px 
+    }
+
+    @include responsive(phone) {
+        font-size: 43.75%; // 7px = 1rem
+    }
+
+    @include responsive(big-desktop) {
+        font-size: 75%; // 12px = 1rem
+    }
 }
 
 body {

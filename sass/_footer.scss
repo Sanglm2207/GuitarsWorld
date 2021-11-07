@@ -19,6 +19,7 @@
         &:hover {
             transform: translateY(-.3rem);
             color: $color-white;
+
             &::after {
                 width: 100%;
                 left: 0;
@@ -29,7 +30,7 @@
             content: "";
             display: flex;
             height: .3rem;
-            height: 100%;
+            width: 0;
             background-color: $color-white;
             position: absolute;
             left: 50%;
