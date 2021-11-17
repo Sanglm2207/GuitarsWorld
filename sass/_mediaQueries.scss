@@ -1,20 +1,3 @@
-// @mixin specialDiv($paddingValue) {
-//     background-color: red;
-//     font-size: 25px;
-//     color: white;
-//     border: 1px solid red;
-//     padding: $paddingValue;
-// }
-
-// .div1 {
-//     @include specialDiv(25rem);
-//     padding: 25rem;
-// }
-
-// .div2 {
-//     @include specialDiv(10rem);
-//     padding: 10rem;
-// }
 @mixin responsive($breakpoint) {
     @if $breakpoint == phone {
         @media only screen and (max-width: 600px) {

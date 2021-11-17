@@ -1,6 +1,7 @@
 @media only screen and (max-width: 600px) {
   padding: 4px;
   color: white; }
+
 *,
 *::before,
 *::after {
@@ -353,5 +354,3 @@ body {
     .products__product--10 {
       grid-row: 4 / span 3;
       grid-column: 4 / span 7; }
-
-/*# sourceMappingURL=style.css.map */
